@@ -184,3 +184,38 @@ console.log(iterator.next().value);
 console.log(sortArr.findLast(test=>test==='Ajith'));
 console.log(num.findLast(test=>test%2==0));
 
+//34.isArray() - Determines whether the passed value is an array.
+let myName="vishnu";
+console.log(Array.isArray(myName));
+console.log(Array.isArray(sortArr));
+
+//35.lastIndexOf() - This method is used to returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backward.
+
+const movies =['The Goat','Kanguva','Vettaiyan','Amaran','Vidamuyarchi','Amaran'];
+console.log(movies.lastIndexOf('Amaran'));
+
+//36.of() - This method is used to create a new array instance from a variable number of arguments, regardless of the number or types of those arguments. It provides a way to create arrays in a more predictable and consistent manner, especially compared to the Array constructor, which can behave differently based on the number of arguments passed.
+
+const ofArr = Array.of(10,20,30,'vishnu',true);
+console.log(ofArr);
+
+//37.of() - This method is used to access elements from an array based on a given index. Unlike the traditional way of accessing elements using bracket notation (arr[index]), the at() method allows you to use both positive and negative integers as the index, which makes it particularly useful for accessing elements from the end of an array.
+
+console.log(sortArr.at(3));
+console.log(sortArr.at(0));
+console.log(sortArr.at(-1));
+
+//38.valueOf() - This method is used to returns the array itself. While this method exists on arrays, it is not often used explicitly because arrays in JavaScript usually behave as expected in most contexts without needing to call valueOf().
+
+console.log(concatArr.valueOf());
+
+//39.flatMap() - he flatMap() method in JavaScript is a powerful array method that combines the functionality of map() and flat() in a single operation. It first maps each element in an array using a mapping function, then flattens the result by one level, effectively creating a new array that is both transformed and flattened.
+
+let flatMaparr = [1, 2, 3, 4];
+let result = flatMaparr.flatMap(x => [x, x * 2]);
+console.log(result);
+
+//40.delete - The delete operator is used to remove a property from an object, but it can also be used to delete an element from an array. However, using delete on an array has some specific behaviors that are important to undfferstand.
+
+console.log(delete result[2]);
+console.log(result);
