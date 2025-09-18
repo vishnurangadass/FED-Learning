@@ -1,3 +1,18 @@
-p{
-    background-color: red;
+header{
+    background-color: aqua;
+}
+nav{
+    background-color: bisque;
+}
+article{
+    background-color: lightgreen;
+}
+section{
+    background-color: blueviolet;
+}
+aside{
+    background-color: yellow;
+}
+footer{
+    background-color: grey;
 }
