@@ -18,7 +18,7 @@ const arr = [
 const valuesArr = arr.values();
 
 for (const actors of valuesArr) {
-  console.log(actors);
+  console.log(actors,"values using values()");
 }
 
 //2. Copying an array.
