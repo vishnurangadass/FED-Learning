@@ -63,6 +63,7 @@ console.log(myFullName.concat(movie));
 
 console.log(myFullName.startsWith("world", 7));
 console.log(myFullName.startsWith("Rangadass"));
+console.log(myFullName.startsWith("Vishnu"));
 console.log(myFullName.startsWith("Rangadass", 7));
 
 //15.endsWith() - This method is used to determine if a string ends with a specified substring. It returns true if the string ends with the specified characters, and false otherwise.
@@ -86,7 +87,7 @@ console.log(movie.lastIndexOf("a"));
 
 console.log(movie.match(/a/g));
 console.log(movie.match(/a/));
-console.log(movie.match(/v/g));
+console.log(movie.match(/t/g));
 
 //19.matchAll() - This method is used to returns an iterator of all results matching a string against a regular expression, including capturing groups. It is useful when you need more detailed information about each match, such as capturing groups and the index of each match.
 
@@ -108,7 +109,7 @@ console.log(upperStr);
 
 //22.toLocaleLowerCase() - This method is used to convert a string to uppercase, while taking into account the locale-specific case mappings. These methods are useful for cases where different languages or regions have specific rules for converting letter cases.
 
-let lowerStr = myFullName.toLocaleLowerCase("en-GB");
+let lowerStr = myFullName.toLocaleLowerCase("cs-CZ");
 console.log(lowerStr);
 
 //23. toString() - This method is used to convert a non-string varible to string.
@@ -126,11 +127,11 @@ console.log(myFullName.valueOf());
 
 //26. padStart() - This method pads the beginning (left side) of the current string with a specified string until the resulting string reaches the given length.Syntax: string.padStart(targetLength, padString)
 
-console.log(myFullName.padStart(19, "v"));
+console.log(myFullName.padStart(19, "vd"));
 
 //27.padwith() - This method pads the end (left side) of the current string with a specified string until the resulting string reaches the given length.Syntax: string.padStart(targetLength, padString)
 
-console.log(myFullName.padEnd(19, "s"));
+console.log(myFullName.padEnd(19, "sh"));
 
 //28.search() - This method is used to search for a match between a string and a regular expression. It returns the index of the first match or -1 if no match is found.
 

@@ -30,7 +30,7 @@ const newArr = [...arr];
 newArr.push(1412200);
 console.log(newArr);
 
-//4. push()- This property is used to remove an element at the end of the array.
+//4. pop()- This property is used to remove an element at the end of the array.
 
 newArr.pop(1412200);
 console.log(newArr);
